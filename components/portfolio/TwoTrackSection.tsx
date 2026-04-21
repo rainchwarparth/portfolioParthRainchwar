@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { ArrowRight, Github, Briefcase, Award } from "lucide-react";
 import type { BuilderProject, CaseStudy } from "@/data/types";
 
@@ -15,8 +14,6 @@ interface TwoTrackSectionProps {
 }
 
 export default function TwoTrackSection({ builderProjects, caseStudies }: TwoTrackSectionProps) {
-  const router = useRouter();
-
   return (
     <section id="two-track" className="py-24 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
@@ -40,77 +37,77 @@ export default function TwoTrackSection({ builderProjects, caseStudies }: TwoTra
             className="mt-6 space-y-4"
           >
             {builderProjects.map((p) => (
-              <motion.div
-                key={p.title}
-                variants={card}
-                onClick={() => router.push(`/project/${p.slug}`)}
-                className="group rounded-xl border border-border bg-card p-5 hover:border-blue-300 transition-colors cursor-pointer"
-              >
-                {/* meta row */}
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-2">
-                    {p.status === "active" && (
-                      <span className="inline-flex items-center gap-1.5 text-xs font-medium px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                        Active
-                      </span>
-                    )}
-                    {p.status === "wip" && (
-                      <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
-                        WIP
-                      </span>
-                    )}
-                    {p.status === "complete" && (
-                      <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                        Complete
-                      </span>
-                    )}
-                    {p.year && (
-                      <span className="text-xs text-muted-foreground">{p.year}</span>
-                    )}
-                  </div>
-                  {p.repoUrl && (
-                    <a
-                      href={p.repoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label="GitHub repository"
-                    >
-                      <Github className="w-4 h-4" />
-                    </a>
-                  )}
-                </div>
-
-                <h3 className="font-semibold text-base group-hover:text-blue-600 transition-colors">{p.title}</h3>
-                <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed line-clamp-2">
-                  {p.description}
-                </p>
-                <div className="mt-3 flex items-center justify-between">
-                  <p className="text-xs font-medium text-blue-600">
-                    {p.impact}
-                  </p>
-                  <div className="flex gap-1.5">
-                    {p.tags.slice(0, 2).map((t) => (
-                      <span
-                        key={t}
-                        className="text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-700"
+              <Link key={p.title} href={`/project/${p.slug}`} className="block group">
+                <motion.div
+                  variants={card}
+                  className="rounded-xl border border-border bg-card p-5 hover:border-blue-300 transition-colors"
+                >
+                  {/* meta row */}
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      {p.status === "active" && (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-medium px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                          Active
+                        </span>
+                      )}
+                      {p.status === "wip" && (
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
+                          WIP
+                        </span>
+                      )}
+                      {p.status === "complete" && (
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                          Complete
+                        </span>
+                      )}
+                      {p.year && (
+                        <span className="text-xs text-muted-foreground">{p.year}</span>
+                      )}
+                    </div>
+                    {p.repoUrl && (
+                      <a
+                        href={p.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label="GitHub repository"
                       >
-                        {t}
-                      </span>
-                    ))}
-                    {p.tags.length > 2 && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-                        +{p.tags.length - 2}
-                      </span>
+                        <Github className="w-4 h-4" />
+                      </a>
                     )}
                   </div>
-                </div>
-                <div className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-blue-600 group-hover:gap-2 transition-all">
-                  View Project <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </motion.div>
+
+                  <h3 className="font-semibold text-base group-hover:text-blue-600 transition-colors">{p.title}</h3>
+                  <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                    {p.description}
+                  </p>
+                  <div className="mt-3 flex items-center justify-between">
+                    <p className="text-xs font-medium text-blue-600">
+                      {p.impact}
+                    </p>
+                    <div className="flex gap-1.5">
+                      {p.tags.slice(0, 2).map((t) => (
+                        <span
+                          key={t}
+                          className="text-xs px-2 py-0.5 rounded-full bg-blue-50 text-blue-700"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                      {p.tags.length > 2 && (
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                          +{p.tags.length - 2}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-blue-600 group-hover:gap-2 transition-all">
+                    View Project <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </motion.div>
         </div>
@@ -135,52 +132,52 @@ export default function TwoTrackSection({ builderProjects, caseStudies }: TwoTra
             className="mt-6 space-y-4"
           >
             {caseStudies.map((cs) => (
-              <motion.div
-                key={cs.slug}
-                variants={card}
-                onClick={() => router.push(`/case/${cs.slug}`)}
-                className="group relative rounded-xl border border-border bg-card p-5 hover:border-amber-300 transition-colors cursor-pointer"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-base group-hover:text-amber-700 transition-colors">{cs.title}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground leading-relaxed line-clamp-2">
-                      {cs.tagline}
-                    </p>
+              <Link key={cs.slug} href={`/case/${cs.slug}`} className="block group">
+                <motion.div
+                  variants={card}
+                  className="relative rounded-xl border border-border bg-card p-5 hover:border-amber-300 transition-colors"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-base group-hover:text-amber-700 transition-colors">{cs.title}</h3>
+                      <p className="mt-1 text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                        {cs.tagline}
+                      </p>
+                    </div>
+                    <ArrowRight className="shrink-0 mt-1 w-4 h-4 text-amber-500 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <ArrowRight className="shrink-0 mt-1 w-4 h-4 text-amber-500 group-hover:translate-x-1 transition-transform" />
-                </div>
 
-                <div className="mt-3 flex flex-wrap items-center gap-2">
-                  {cs.published && (
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-medium">
-                      Published
-                    </span>
-                  )}
-                  {cs.papers.length > 0 && (
-                    <span className="text-xs text-muted-foreground">
-                      {cs.papers.length}{" "}
-                      {cs.papers.length === 1 ? "paper" : "papers"}
-                    </span>
-                  )}
-                  {cs.highlight && (
-                    <>
-                      <span className="text-xs text-muted-foreground">·</span>
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
-                        {cs.highlight}
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    {cs.published && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-medium">
+                        Published
                       </span>
-                    </>
-                  )}
-                  {cs.papers.length === 0 && cs.themes.slice(0, 2).map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
+                    )}
+                    {cs.papers.length > 0 && (
+                      <span className="text-xs text-muted-foreground">
+                        {cs.papers.length}{" "}
+                        {cs.papers.length === 1 ? "paper" : "papers"}
+                      </span>
+                    )}
+                    {cs.highlight && (
+                      <>
+                        <span className="text-xs text-muted-foreground">·</span>
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-100">
+                          {cs.highlight}
+                        </span>
+                      </>
+                    )}
+                    {cs.papers.length === 0 && cs.themes.slice(0, 2).map((t) => (
+                      <span
+                        key={t}
+                        className="text-xs px-2 py-0.5 rounded-full bg-amber-50 text-amber-700"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </motion.div>
         </div>

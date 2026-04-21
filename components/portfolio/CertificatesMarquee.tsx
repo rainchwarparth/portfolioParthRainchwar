@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import type React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { ArrowRight, Eye } from "lucide-react";
 import type { Certificate } from "@/data/types";
 import CertificatePreviewModal from "./CertificatePreviewModal";
@@ -15,7 +15,6 @@ interface CertificatesMarqueeProps {
 export default function CertificatesMarquee({
   certificates,
 }: CertificatesMarqueeProps) {
-  const router = useRouter();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
   const isDraggingRef = useRef(false);
@@ -91,13 +90,13 @@ export default function CertificatesMarquee({
               <h2 className="text-2xl font-bold tracking-tight text-foreground">
                 Certifications
               </h2>
-              <button
-                onClick={() => router.push("/certificates")}
+              <Link
+                href="/certificates"
                 className="p-1.5 rounded-lg hover:bg-muted transition-colors"
                 title="View all certificates"
               >
                 <ArrowRight className="w-5 h-5 text-foreground/60 hover:text-foreground" />
-              </button>
+              </Link>
             </div>
             <p className="text-muted-foreground text-sm mt-2">
               Recognized credentials in AI, data science, and digital skills
