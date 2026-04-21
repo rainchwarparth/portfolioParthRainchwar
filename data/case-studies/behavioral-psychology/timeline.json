@@ -1,0 +1,251 @@
+[
+  {
+    "year": "2020",
+    "title": "The Spark \u2014 Psychology Certifications",
+    "description": "During COVID lockdown I found myself with time and curiosity. Two courses \u2014 Introduction to Psychology (Yale via Coursera) and Social Psychology with Honors (Wesleyan via Coursera) \u2014 changed the way I read people. The concepts of social influence, cognitive biases, and behavioral conditioning explained everything around me.",
+    "tags": ["FOUNDATION"],
+    "attachment": {
+      "label": "Yale + Wesleyan Certifications",
+      "type": "credential",
+      "href": "https://www.coursera.org/learn/introduction-psych"
+    }
+  },
+  {
+    "year": "2020\u20132021",
+    "title": "Behavioral Theory — CBT and Freud",
+    "description": "B.F. Skinner's Cognitive Behavioral Theory gave me a structure for understanding decision-making in everyday contexts — food, money, digital behavior. Freud's psychodynamic perspective added a different layer: the unconscious motivations behind consumer behavior, social media use, and herd mentality.",
+    "tags": ["CBT", "FREUD"]
+  },
+  {
+    "year": "May 2021",
+    "title": "The Domino's Signal \u2014 13 Crore Records Exposed",
+    "description": "In May 2021, the Domino's India data breach leaked approximately 13 crore customer records \u2014 order histories, addresses, phone numbers, delivery patterns. College-age users had distinct, repeated consumption patterns nobody thought they were broadcasting. The breach made visible what was always happening silently. This was the catalyst.",
+    "tags": ["DATA LEAK", "CATALYST"],
+    "attachment": {
+      "label": "Economic Times \u2014 Domino's Data Breach Report",
+      "type": "dataset",
+      "href": "https://indianexpress.com/article/technology/tech-news-technology/dominos-data-breach-name-address-other-details-of-over-18-crore-orders-leaked-7328416/"
+    }
+  },
+  {
+    "year": "May 4\u201310, 2021",
+    "title": "Paper 1 \u2014 Designing the Cognitive Questionnaire",
+    "description": "Inspired by the Domino's signal and Skinner's behavioral theory, I designed a three-section questionnaire to map how people make decisions. The survey ran for exactly 7 days \u2014 May 4 to May 10, 2021 \u2014 targeting youth (15\u201320), adults (20\u201324), and millennials (25+) across social media platforms.",
+    "tags": ["SURVEY DESIGN"],
+    "attachment": { "label": "3-Section Questionnaire Taxonomy", "type": "form" },
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/paper1-taxonomy.png",
+        "alt": "Paper 1 questionnaire taxonomy diagram",
+        "caption": "Paper 1 \u2014 Questionnaire Taxonomy. Three sections: Introductory (demographic), Choice-Based (behavioral scenarios), and Decision Making (cognitive preference). Distributed across social media platforms over 7 days to capture cross-demographic responses."
+      }
+    ],
+    "dataTable": {
+      "caption": "Paper 1 \u2014 Questionnaire Taxonomy",
+      "headers": ["Section", "Question Type", "Sample Questions"],
+      "rows": [
+        ["Introductory", "Demographic", "Name \u00b7 Age group (Youth/Adult/Millennial) \u00b7 Social media platforms used"],
+        ["Choice-Based", "Behavioral Scenario", "Giver/Matcher/Taker self-ID \u00b7 Criminal forgiveness scenario \u00b7 Argument behavior"],
+        ["Decision Making", "Cognitive Preference", "First priority (Family/Friends/World/Nation/Self) \u00b7 Choose Love/Peace/Wealth/Money \u00b7 Social validation importance"]
+      ]
+    }
+  },
+  {
+    "year": "December 2021",
+    "title": "Paper 1 Published \u2014 Springer IACC",
+    "description": "The cognitive decision-making paper was published in the International Advanced Computing Conference proceedings (Springer CCIS). ML algorithms classified respondents into 5 distinct behavioral clusters. The largest cluster (41%) showed the merciful-silent type: people who forgive, stay quiet, and feel special about their lives. COVID had shifted values \u2014 family rose above success in measurable ways.",
+    "tags": ["PUBLISHED"],
+    "attachment": {
+      "label": "Springer IACC 2021 \u2014 Paper 1",
+      "type": "paper",
+      "href": "https://link.springer.com/chapter/10.1007/978-3-030-95502-1_14"
+    },
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/paper1-insights.png",
+        "alt": "Paper 1 cluster insights visualization",
+        "caption": "Paper 1 \u2014 Cluster Insights. Visualization of the 5 behavioral clusters. Cluster 1 (Merciful-Silent, 41.04%) and Cluster 3 (Family-First, 31.21%) together represent nearly 75% of respondents \u2014 a strong COVID-era signal of values shifting toward forgiveness and family."
+      }
+    ],
+    "dataTable": {
+      "caption": "Table 5 \u2014 Meaningful Insights from Obtained Data",
+      "headers": ["Cluster", "Behavioral Profile", "% of Respondents"],
+      "rows": [
+        ["1", "Merciful mindset \u00b7 Feels special about life \u00b7 Stays silent in arguments", "41.04%"],
+        ["2", "Chooses peace \u00b7 Stays silent \u00b7 Forgives others' mistakes", "31.79%"],
+        ["3", "Prioritizes family above all \u00b7 Stays silent in arguments", "31.21%"],
+        ["4", "Chooses success over love/wealth/peace \u00b7 Stays silent", "6.21%"],
+        ["5", "Feels special in life \u00b7 Taker rather than Giver", "\u2014"]
+      ]
+    },
+    "barChart": {
+      "caption": "Cluster Distribution \u2014 % of Survey Respondents",
+      "xKey": "cluster",
+      "yLabel": "Respondents (%)",
+      "bars": [
+        { "dataKey": "pct", "color": "#f59e0b", "label": "Respondents (%)" }
+      ],
+      "data": [
+        { "cluster": "C1 Merciful", "pct": 41.04 },
+        { "cluster": "C2 Peace",    "pct": 31.79 },
+        { "cluster": "C3 Family",   "pct": 31.21 },
+        { "cluster": "C4 Success",  "pct": 6.21 }
+      ]
+    }
+  },
+  {
+    "year": "Jan 2021 \u2013 Mar 2022",
+    "title": "Paper 3 \u2014 Designing the Consumer Behavior Survey",
+    "description": "Concurrently with Paper 1 publication, I began designing a 30-question survey to map how social media usage drives online purchasing decisions across India. The survey ran for 14 months. Three age cohorts: Teen (11\u201319), Adult (20\u201340), Mature (40+). Out of 1,500 collected, 1,438 were verified.",
+    "tags": ["SURVEY DESIGN"],
+    "attachment": { "label": "30-Question Consumer Behavior Survey", "type": "form" },
+    "dataTable": {
+      "caption": "Paper 3 \u2014 Survey Scope",
+      "headers": ["Attribute", "Value"],
+      "rows": [
+        ["Questions", "30"],
+        ["Geography", "Pan-India"],
+        ["Survey window", "January 2021 \u2013 March 2022 (14 months)"],
+        ["Responses collected", "1,500"],
+        ["Responses verified", "1,438"],
+        ["Age cohorts", "Teen (11\u201319) \u00b7 Adult (20\u201340) \u00b7 Mature (40+)"],
+        ["Distribution platforms", "Instagram \u00b7 WhatsApp \u00b7 LinkedIn \u00b7 Facebook"]
+      ]
+    }
+  },
+  {    "year": "2020",
+    "title": "Paper 2 — Nutritional Psychology Survey",
+    "description": "During COVID lockdown, I re-administered an existing dietary habit survey to the MIT-WPU engineering cohort I had been tracking. The pandemic had just reshaped eating behavior on campus and the data confirmed it. This second wave of responses, layered on top of the 2018–2019 baseline, created a before-and-after dataset that would later be the backbone of the nutritional psychology paper.",
+    "tags": ["SURVEY DESIGN"],
+    "attachment": { "label": "Longitudinal Dietary Survey — MIT-WPU", "type": "form" },
+    "dataTable": {
+      "caption": "Paper 2 — Survey Scope",
+      "headers": ["Attribute", "Value"],
+      "rows": [
+        ["Institution", "MIT-WPU School of Engineering"],
+        ["Sample size", "150+ students"],
+        ["Age range", "19–22 years"],
+        ["Gender split", "71.21% male · 28.78% female"],
+        ["Collection window", "2018–2019 baseline + 2020 post-COVID wave"],
+        ["Residence", "65% hostel · 33% Pune locals · 52% metro cities"]
+      ]
+    },
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/paper2-taxonomy.png",
+        "alt": "Paper 2 questionnaire taxonomy diagram",
+        "caption": "Paper 2 — Survey Taxonomy. The questionnaire captured dietary frequency, BMI self-reports, sickness history, food quality preferences, and monthly food spend. The same instrument was administered pre-COVID (2018–2019) and post-COVID (2020), enabling direct behavioral comparison."
+      }
+    ]
+  },
+  {    "year": "November 2022",
+    "title": "Paper 2 Published \u2014 Nutritional Psychology, 98% Accuracy",
+    "description": "Published in the Springer ICEI 2022 proceedings. The nutritional psychology paper analyzed dietary shifts in MIT-WPU engineering students across a 2018–2020 window — pre and post-COVID. Decision Tree on sickness frequency hit 98% accuracy. Random Forest on BMI hit 96.53%. Pre-COVID, 50% ate healthy. Post-COVID, that rose to 83%+.",
+    "tags": ["PUBLISHED"],
+    "attachment": {
+      "label": "Springer Nature Singapore \u2014 ICEI 2022",
+      "type": "paper",
+      "href": "https://link.springer.com/chapter/10.1007/978-981-99-4634-1_80"
+    },
+    "dataTable": {
+      "caption": "Respondent Demographics",
+      "headers": ["Attribute", "Value"],
+      "rows": [
+        ["Age range", "19\u201322 years"],
+        ["Male / Female", "71.21% / 28.78%"],
+        ["From Pune (local)", "33%"],
+        ["From metro cities", "52%"],
+        ["Hostel students", "65%"],
+        ["Survey period", "2018\u20132020 (Pre & Post COVID tracked)"],
+        ["Sample size", "150+ MIT-WPU School of Engineering students"]
+      ]
+    }
+  },
+  {
+    "year": "November 2022 \u00b7 Results",
+    "title": "Paper 2 \u2014 Model Accuracy Breakdown",
+    "description": "Five prediction targets were tested using classification and regression models. The headline 98% accuracy (Decision Tree on frequency of falling sick) validated the hypothesis that behavioral signals from food patterns could predict health outcomes with a degree of precision traditional dietary surveys never achieved.",
+    "tags": ["ML RESULTS"],
+    "dataTable": {
+      "caption": "Table 2 \u2014 Classification Model Results",
+      "headers": ["Target", "Model", "Accuracy"],
+      "rows": [
+        ["BMI Category", "Decision Tree", "83.26%"],
+        ["BMI Category", "Multinomial Bayes", "83.72%"],
+        ["Frequency of Falling Sick", "Decision Tree", "98.00%"],
+        ["Frequency of Falling Sick", "Gaussian Bayes", "97.82%"],
+        ["Infection Lingering", "Decision Tree", "86.04%"],
+        ["Infection Lingering", "Multinomial Bayes", "90.69%"],
+        ["Pre/Post-COVID Food Schedule", "Decision Tree", "79.06%"],
+        ["Food Quality Preference", "Multinomial Bayes", "79.06%"]
+      ]
+    },
+    "barChart": {
+      "caption": "ML Model Accuracy by Target Variable",
+      "xKey": "target",
+      "yLabel": "Accuracy (%)",
+      "bars": [
+        { "dataKey": "dt",    "color": "#f59e0b", "label": "Decision Tree" },
+        { "dataKey": "bayes", "color": "#6366f1", "label": "Naive / Gaussian Bayes" }
+      ],
+      "data": [
+        { "target": "Sick Freq",     "dt": 98.00, "bayes": 97.82 },
+        { "target": "Infection",     "dt": 86.04, "bayes": 90.69 },
+        { "target": "BMI",           "dt": 83.26, "bayes": 83.72 },
+        { "target": "Food Schedule", "dt": 79.06, "bayes": null  },
+        { "target": "Food Quality",  "dt": null,  "bayes": 79.06 }
+      ]
+    }
+  },
+  {
+    "year": "May 2023",
+    "title": "Paper 3 Published \u2014 IoB Consumer Psychology",
+    "description": "The paper that brought the three-year track together. The 1,438-person pan-India survey on social media and purchasing behavior confirmed most of what the earlier work had pointed toward. Adults (20–40) drove 72.36% of all orders. Instagram dominated at 75% average. Time on social media had a direct gradient effect — more time correlated with more purchases.",
+    "tags": ["PUBLISHED", "IoB"],
+    "attachment": {
+      "label": "CRC Press \u2014 Internet of Behaviors Book Chapter",
+      "type": "paper",
+      "href": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003305170-4/analytical-study-consumer-social-behavioral-psychology-influence-online-purchasing-parth-rainchwar-rishikesh-mate-soham-wattamwar-aditya-gaisamudre-pratyush-jha-shilpa-sonawani"
+    },
+    "dataTable": {
+      "caption": "Paper 3 \u2014 Key Survey Statistics",
+      "headers": ["Metric", "Value"],
+      "rows": [
+        ["Responses collected / verified", "1,500 / 1,438"],
+        ["Survey period", "January 2021 \u2013 March 2022"],
+        ["Survey questions", "30"],
+        ["Geography", "India (pan-India respondents)"],
+        ["Teen (11\u201319) share", "11.97%"],
+        ["Adult (20\u201340) share", "65%"],
+        ["Mature (40+) share", "23.03%"],
+        ["Adult share of total orders", "72.36%"],
+        ["Peak age for orders", "20\u201324 years (9.116%)"],
+        ["Respondents spending >\u20b94,000/order", "78.28%"],
+        ["Peak purchase month", "November (Diwali season) \u2014 13.64%"],
+        ["Instagram avg interaction", "75%"]
+      ]
+    },
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-1.jpeg",
+        "alt": "Bar chart: Social media platform usage by age group",
+        "caption": "Fig 1 \u2014 Platform Usage by Age Group. Instagram leads across all segments (Adult 76.45%, Mature 73.72%, Teen 73.84%). LinkedIn shows strong adult adoption (67.24%). Snapchat: Adult 66.92%, Mature 68.88%, Teen 68.02%. Facebook ~50% across all groups."
+      },
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-6.jpeg",
+        "alt": "Bar chart: Time spent on social media vs. purchasing influence",
+        "caption": "Fig 6 \u2014 Time on Social Media vs. Purchase Influence. Direct gradient: <1 hour = 38.53% buy-influenced; 1\u20132 hours = 40.05%; >2 hours = 45.08%. The No share drops as time increases (40.60% to 34.20%), confirming prolonged exposure raises purchase intent."
+      },
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-11.jpeg",
+        "alt": "Bar chart: Home appliance purchase influenced by gender, age group, and social media",
+        "caption": "Fig 11 \u2014 Home Appliance Purchases by Gender x Age x Social Media Influence. Adult females: 30.20% influenced. Adult males: 31.07% uninfluenced. Mature females: 9.26% influenced. Teen females: 5.64% \u2014 a strong generational and gender split in social media's sway over high-value product decisions."
+      }
+    ]
+  },
+  {
+    "year": "2023\u2013Present",
+    "title": "One Narrative, Three Papers",
+    "description": "The three-year arc from the Yale certification to the published IoB paper — cognitive decision-making (Springer IACC 2021), nutritional psychology (Springer ICEI 2022), and consumer behavior under the IoB framework (CRC Press 2023). Three separate surveys, three different scales of analysis, one consistent thread: behavioral data is measurable and interpretable with the right methodology."
+  }
+]

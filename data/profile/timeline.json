@@ -1,0 +1,250 @@
+[
+  {
+    "year": "2016",
+    "title": "KV Schooling — Kendriya Vidyalaya",
+    "description": "Kendriya Vidyalaya, central government schooling. Science and math stream through Class 12.",
+    "track": "milestone"
+  },
+  {
+    "year": "2018",
+    "title": "Enrolled at MIT-WPU, Computer Engineering",
+    "description": "Started B.Tech in Computer Science and Engineering at MIT World Peace University, Pune.",
+    "date": "Jul 2018",
+    "track": "milestone"
+  },
+  {
+    "year": "2018",
+    "title": "Peer Tutor — Maths, C++, Python, ML, R",
+    "description": "Tutored batchmates across Maths I/II/III, C++, Python, R, Tableau, and intro ML. Started because i loved teaching and people asked and kept going because it forced me to understand the material properly.",
+    "date": "Jul 2018 – Jun 2019",
+    "track": "milestone"
+  },
+  {
+    "year": "2018",
+    "title": "Freelancer — Software & Web Projects",
+    "description": "Started picking up software and web projects alongside college. Ran mostly on referrals. The Trek Recommendation System was the last built during this stretch.",
+    "track": "tech"
+  },
+  {
+    "year": "2020",
+    "title": "Yale, Wesleyan & Duke — Psychology Certifications",
+    "description": "Completed Introduction to Psychology (Yale), Social Psychology with Honors (Wesleyan), and Business Metrics for Data-Driven Companies (Duke) during COVID lockdown. The beginning of behavioral research.",
+    "track": "research"
+  },
+  {
+    "year": "2020",
+    "title": "Domino's Data Leak — Behavior Tracing Catalyst",
+    "description": "Domino's India data breach exposed 13 crore consumer records. Sparked behavior tracing as a formal research direction — mapping what data reveals about people, not just what people say.",
+    "track": "research",
+    "slug": "behavioral-psychology",
+    "linkType": "case"
+  },
+  {
+    "year": "2020",
+    "title": "RA — Data Warehouse Lab, MIT-WPU",
+    "description": "Prof. Varsha reached out after a semester project on psychological market basket analysis caught her attention. Joined the Data Warehouse Lab as Research Assistant and spent the next 30 months running behavioral research across 10,000+ parameters.",
+    "track": "research"
+  },
+  {
+    "year": "2020",
+    "title": "HelpingWind — Social Media & Content",
+    "description": "First formal work role. Managed social media and content writing for HelpingWind. Covered SEO, web content, and digital marketing.",
+    "date": "Aug 2020 – Jun 2021",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2020",
+    "title": "Haar Cascade Research — Smart Voting System",
+    "description": "Read through 14 published studies on face recognition methods. The question was which hybrid would actually work for single-voter, real-time deployment. Built the Haar Cascade + LBPH pipeline in Python and OpenCV.",
+    "track": "tech",
+    "slug": "haar-cascade",
+    "linkType": "case"
+  },
+  {
+    "year": "2021",
+    "title": "Open Research Forum — 1,000+ Peer Interviews",
+    "description": "Set up a research forum to run video interviews. Over 1,000 conversations with students across different academic backgrounds, all mapped to decision-making patterns. The raw data became the foundation for three published papers.",
+    "track": "research",
+    "slug": "behavioral-psychology",
+    "linkType": "case"
+  },
+  {
+    "year": "2021",
+    "title": "Conversational Bot — T5 Model + Skinner's CBT",
+    "description": "Built 'Speak It Out', a multilingual bot using T5 grounded in Skinner's CBT framework. It reads emotional and linguistic patterns in user input and returns a behavioral report. Submitted to SIH for funding.",
+    "track": "tech"
+  },
+  {
+    "year": "2021",
+    "title": "Behavioral Psychology Paper — Springer IACC",
+    "description": "Published ML-based behavioral clustering across 1,438 respondents. Five behavioral clusters identified; 41% 'merciful-silent' type. COVID shifted cultural values — family rose above success. CCIS vol. 1528.",
+    "track": "research",
+    "slug": "behavioral-psychology",
+    "linkType": "case"
+  },
+  {
+    "year": "2021",
+    "title": "Face Recognition Paper — IEEE Smart GENCON",
+    "description": "Presented at IEEE Smart GENCON 2021, Pune. LBPH achieved 93.33% accuracy in the wearable-device domain, outperforming FisherFace. Single-face model validated for Smart Voting deployment.",
+    "track": "research",
+    "slug": "haar-cascade",
+    "linkType": "case"
+  },
+  {
+    "year": "2021",
+    "title": "TechHut — Full-Stack Developer Intern",
+    "description": "Built a MERN application for real-time cryptocurrency price tracking. Implemented filtering API with MongoDB, built the React frontend.",
+    "date": "Jul 2021 – Oct 2021",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2021",
+    "title": "AI / ML Freelancer — Active Period",
+    "description": "Active freelance stretch handling NLP, ML, and data pipeline work for independent clients.",
+    "date": "Aug 2021 – May 2022",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2021",
+    "title": "IdeaIn10 Runner-Up — IET Pune, 'Speak It Out'",
+    "description": "Secured second place at IET Pune Chapter Ideathon for Speak It Out — a conversational empathy model. Recognition led to university funding pursuit via Smart India Hackathon.",
+    "track": "milestone"
+  },
+  {
+    "year": "2022",
+    "title": "AI Research Intern — C-DAC Pune",
+    "description": "Final Year Project sponsored by C-DAC Applied AI Group (Strategic Projects Group, Ministry of Electronics & IT, Govt. of India), under Dr. Krishnanjan Bhattacharjee (Joint Director, SPG). Researched Domain Identification for Named Entity Disambiguation using DistilBERT + Zero-Shot classification across 6 domains on an 11,000+ dataset. Achieved 99.24% domain classification accuracy and 93% NER. Built an autonomous data pipeline and a Streamlit web interface.",
+    "date": "Jan 2022 – Jun 2022",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2022",
+    "title": "SIH Grant — INR ₹1,00,000 for Speak It Out",
+    "description": "Smart India Hackathon 2022: presented Speak It Out. Secured a Government of India innovation grant of INR 1,00,000 to further develop the conversational empathy model.",
+    "date": "Mar 2022",
+    "track": "milestone"
+  },
+  {
+    "year": "2022",
+    "title": "Student Peace Ambassador — MIT-WPU · UNESCO",
+    "description": "Appointed Student Peace Ambassador and Speaker at the 8th World Parliament of Science, Religion, and Philosophy — MIT-WPU in association with UNESCO.",
+    "date": "Mar 2022",
+    "track": "milestone"
+  },
+  {
+    "year": "2022",
+    "title": "Nutritional Psychology Paper — Springer Nature",
+    "description": "Published ML-based nutritional psychology research with the Biology department. Decision Tree on sickness frequency: 98%. Random Forest on BMI: 96.53%. LNEE vol. 1066.",
+    "date": "Nov 2022",
+    "track": "research",
+    "slug": "behavioral-psychology",
+    "linkType": "case"
+  },
+  {
+    "year": "2022",
+    "title": "Trek Recommendation System — Freelance Project",
+    "description": "Delivered the Trek Recommendation System as a freelance project. 208+ Indian treks, content-based filtering with scikit-learn KNN, Flask REST API, under a second on lookup. First ML system I shipped after college.",
+    "track": "tech",
+    "slug": "trek",
+    "linkType": "project"
+  },
+  {
+    "year": "2022",
+    "title": "Synpulse Internship — BRv7 Certified",
+    "description": "Interned at Synpulse Management Consulting, Pune. Built a dashboard using Angular, Spring Boot, SQL, and Python for the Business Radar project. Earned BRv7 certification and secured a Pre-Placement Offer.",
+    "date": "Apr 2022 – Jul 2022",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2022",
+    "title": "Joined Synpulse — Trainee Analyst",
+    "description": "Joined Synpulse full-time as Trainee Analyst. Designed a mutual fund system design for a leading private bank and got a Pat on the Back award for it. Recognized as Star Performer for building the data pipeline and UI for Syninformation platform. One of 6 selected across India for Synpulse's internal data analytics certification.",
+    "date": "Aug 2022 – Aug 2023",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2023",
+    "title": "Synpulse — Promoted to Analyst",
+    "description": "Promoted to Analyst. Took on institutional client consulting for a global bank, mostly ICM systems design and front-office automated system implementation. Moved to a Southeast Asian core banking project as a backend and infrastructure engineer.",
+    "date": "Sep 2023 – Dec 2024",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2023",
+    "title": "IoB Consumer Psychology — Taylor & Francis",
+    "description": "Published Internet of Behaviors framework. Adults 20–40 drove 72.36% of orders. Instagram averaged 75% engagement. Users spending >2 hours were 45.08% buy-influenced vs 38.53% for <1 hour.",
+    "date": "May 2023",
+    "track": "research",
+    "slug": "behavioral-psychology",
+    "linkType": "case"
+  },
+  {
+    "year": "2023",
+    "title": "E-commerce Behavioral Framework",
+    "description": "Took the IoB survey data further. Segmented by platform and demographic, mapped Diwali in November as a 13.64% annual order peak, and traced how gender shapes discovery versus purchase intent.",
+    "track": "research",
+    "slug": "e-commerce",
+    "linkType": "case"
+  },
+  {
+    "year": "2023",
+    "title": "ONCP Vision — Protocol for Content Distribution",
+    "description": "The ONCP concept came from watching my father's cable business for years. Institutions didn't outcompete LCOs, they bypassed them by owning the entire stack. ONCP is a concept response to that: a five-layer DPI protocol that gives LCOs an infrastructure role rather than asking them to compete at the application layer.",
+    "track": "research",
+    "slug": "oncp",
+    "linkType": "case"
+  },
+  {
+    "year": "2024",
+    "title": "Synpulse — Promoted to Senior Analyst",
+    "description": "Promoted to Senior Analyst. Backend and infrastructure engineering at the core, but the role operates across multiple interface levels — system design, client consulting, and delivery. Working across 3 projects under one client simultaneously, mostly in financial systems for global banks and private wealth clients.",
+    "date": "Dec 2024 – Present",
+    "track": "work",
+    "slug": "workex",
+    "linkType": "work"
+  },
+  {
+    "year": "2024",
+    "title": "ONCP Architecture Refined",
+    "description": "Fleshed out the five layers: Open Content Network API, Shared National CDN, Device-Neutral OS, Aadhaar+UPI identity, and edge compute. The argument is that LCOs aren't dumb pipes. They're infrastructure nodes that lack a protocol to operate as one. That's the gap ONCP is designed to fill.",
+    "track": "research",
+    "slug": "oncp",
+    "linkType": "case"
+  },
+  {
+    "year": "2024",
+    "title": "Financial Analysis Engine — Personal Market Research",
+    "description": "Built a RAG pipeline for financial metric extraction applied to personal market analysis. Exploration of the psychology and trading intersection. Private work — no public trace.",
+    "track": "tech"
+  },
+  {
+    "year": "2025",
+    "title": "Sansad — Indian Election Strategy Game (WIP)",
+    "description": "Building a browser strategy game set in the 2024 Indian General Election. 543 constituencies, 5,000+ candidates, an AI advisor that comments on every move, 7-turn campaign. Closest I've got to the intersection of politics, data, and game design.",
+    "track": "tech",
+    "slug": "sansad",
+    "linkType": "project"
+  },
+  {
+    "year": "2026",
+    "title": "TraceAI — Agentic Research Platform (Active)",
+    "description": "Building TraceAI. It maps research as an ontology graph so concepts, hypotheses, evidence, and issues all connect explicitly. Powered by Groq LLaMA 3.3 70B with per-node reasoning threads, voice input via Whisper, and a live ReactFlow canvas. The point is the AI can't drift from what you've actually built.",
+    "track": "tech",
+    "slug": "traceai",
+    "linkType": "project"
+  }
+]

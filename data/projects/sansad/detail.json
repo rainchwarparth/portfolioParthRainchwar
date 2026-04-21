@@ -1,0 +1,81 @@
+{
+  "slug": "sansad",
+  "title": "Sansad",
+  "tagline": "Indian Election Strategy Game — 2024 Lok Sabha",
+  "summary": "A browser-based turn-based political simulation built around the 2024 Indian General Election. Pick a real party — BJP, Congress, AAP, TMC, SP, and more — and fight your way to 272 seats across 7 turns of campaign decisions. Every action has a cost, alliances are fragile, and an AI advisor comments on your strategy turn by turn.",
+  "year": "2025",
+  "status": "wip",
+  "repoUrl": "https://github.com/rainchwarparth/Sansad-Game",
+  "tags": ["React", "TypeScript", "Game Design", "AI Advisor", "Browser Game", "Political Simulation"],
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "What Is This?",
+      "body": "Sansad is a political simulation game built around the 2024 Indian General Election. Pick a real party and fight your way to 272 seats across 7 turns of campaign decisions. Every move costs something, alliances fall apart, and an AI advisor comments on your position turn by turn.\n\nSolo side project, no party affiliation. Started it because I couldn't find a game that takes Indian electoral mechanics seriously — not as a theme, but as the actual system. The Civilization comparison holds: same resource management and coalition logic, but built on real 2024 Lok Sabha data.\n\nSource is currently private while the game is in development. Release planned."
+    },
+    {
+      "type": "how-it-works",
+      "heading": "Gameplay Overview",
+      "steps": [
+        "Party Selection — Choose from all major real Indian parties with their actual 2024 seat counts, alliance blocs, ideologies, and regional strongholds. Three difficulty levels: Simple, Realistic, Complex.",
+        "Pre-Campaign Setup — Solo mode: pick exactly which of the 543 Lok Sabha seats to contest. Alliance mode: form coalitions with other parties; seat-sharing negotiations run round by round.",
+        "Candidate System — Over 5,000 candidates across all 543 constituencies, each with 30+ attributes including popularity, loyalty, betrayal risk, ground network, and incumbency. Denied candidates defect — switching parties, going independent, or demanding alternate seats.",
+        "Campaign Launch — A Flash News modal fires at campaign start with categorised breaking headlines: party switches, rebels, ticket denials, new alliances.",
+        "7-Turn Campaign — Full interactive India map with all 543 constituency polygons. 12 action types: rallies, sabotage, caste outreach, bribery, candidate poaching, and more. An AI advisor lives in the right panel, commenting on your position each turn.",
+        "Alliance Management — The Alliance HQ panel shows coalition composition, majority progress, and affinity indicators. If tension gets too high, the coalition collapses and rebels form new fronts.",
+        "End Game — Win condition: 272 seats out of 543. The result screen shows a full declared-seats ticker, alliance bloc breakdown, and final seat map."
+      ]
+    },
+    {
+      "type": "screenshots",
+      "heading": "Screenshots",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/01_party_setup.png",
+          "caption": "Party Selection — choose a real party with actual 2024 seat counts, alliances, and regional strongholds"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/C.jpeg",
+          "caption": "Campaign Map — full interactive India map with all 543 constituency polygons and campaign action panel"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/H.jpeg",
+          "caption": "Candidate System — AI assigns candidates per constituency; you lock strong picks and swap weaker ones"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/A.jpeg",
+          "caption": "Alliance HQ — coalition composition, majority progress tracker, and affinity indicators"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Sansad-Game/master/public/screenshots/B.jpeg",
+          "caption": "End Game — full declared-seats ticker, alliance bloc breakdown, and final seat map"
+        }
+      ]
+    },
+    {
+      "type": "open-problems",
+      "heading": "Design Challenges",
+      "body": "Building a politically accurate simulation at this scale surfaces some genuinely hard design problems:",
+      "problems": [
+        "Balancing the vote-share math so that all 12 campaign action types feel meaningfully different and not dominated by a single strategy.",
+        "Modelling caste, urban/rural, income, and generational voter blocs accurately without the simulation becoming opaque.",
+        "Alliance dynamics: how fragile should coalitions be? At what point does the AI advisor start recommending breaking alliances rather than holding them?",
+        "Scalability of the candidate system — tracking 5,000+ candidate states across 7 turns without performance degradation.",
+        "Making the game mechanically interesting to players who know nothing about Indian politics while staying authentic enough for those who do."
+      ]
+    },
+    {
+      "type": "collaboration",
+      "heading": "Interested in Playtesting or Contributing?",
+      "body": "The source is currently private while the game is in active development. That will change. In the meantime — if you want to playtest, suggest a mechanic, report a bug you spotted in these screenshots, or contribute data improvements:",
+      "backgrounds": [
+        "Data accuracy — candidate attributes, constituency demographics, party affinity scores",
+        "Balancing — vote-share math, action economics",
+        "Hindi and regional language strings",
+        "New scripted scenarios based on real election events",
+        "Mobile UX"
+      ],
+      "email": "parthrainchwar@gmail.com"
+    }
+  ]
+}

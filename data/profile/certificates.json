@@ -1,0 +1,232 @@
+[
+  {
+    "id": "html-css-2020",
+    "name": "HTML & CSS Fundamentals",
+    "issuer": "Coursera",
+    "year": "2020",
+    "category": "programming",
+    "description": "Fundamentals of HTML and CSS for web development",
+    "fileName": "/certificates/html-css-2020.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "responsive-web-design",
+    "name": "Responsive Web Design",
+    "issuer": "Coursera",
+    "year": "2020",
+    "category": "programming",
+    "description": "Building responsive web applications across devices",
+    "fileName": "/certificates/responsive-web-design.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "excel-for-business",
+    "name": "Excel for Business",
+    "issuer": "LinkedIn Learning",
+    "year": "2021",
+    "category": "data",
+    "description": "Excel fundamentals for business analysis",
+    "fileName": "/certificates/excel-for-business.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "excel-skills-essentials",
+    "name": "Excel Skills for Business Essentials",
+    "issuer": "Macquarie University",
+    "year": "2021",
+    "category": "data",
+    "description": "Essential Excel skills for business professionals",
+    "fileName": "/certificates/excel-skills-essentials.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "statistics-foundation",
+    "name": "Statistics Foundation",
+    "issuer": "LinkedIn Learning",
+    "year": "2021",
+    "category": "data",
+    "description": "Foundational concepts in statistics and probability",
+    "fileName": "/certificates/statistics-foundation.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "ml-python",
+    "name": "Machine Learning with Python",
+    "issuer": "Coursera",
+    "year": "2022",
+    "category": "ai",
+    "description": "ML algorithms and Python implementation",
+    "fileName": "/certificates/ml-python.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "data-science-ml-r",
+    "name": "Data Science, Machine Learning & R",
+    "issuer": "Udemy",
+    "year": "2022",
+    "category": "ai",
+    "description": "Comprehensive data science and ML with R programming",
+    "fileName": "/certificates/data-science-ml-r.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "tableau-dashboard",
+    "name": "Creating Tableau Dashboard",
+    "issuer": "Coursera",
+    "year": "2022",
+    "category": "data",
+    "description": "Data visualization and dashboard creation with Tableau",
+    "fileName": "/certificates/tableau-dashboard.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "tiny-ml",
+    "name": "Introduction to TinyML",
+    "issuer": "EdgeImpulse",
+    "year": "2023",
+    "category": "ai",
+    "description": "Machine learning on IoT and embedded devices",
+    "fileName": "/certificates/tiny-ml.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "ibm-watson-ai",
+    "name": "Getting Started with IBM Watson AI",
+    "issuer": "IBM",
+    "year": "2023",
+    "category": "ai",
+    "description": "Introduction to IBM Watson and AI services",
+    "fileName": "/certificates/ibm-watson-ai.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "sas-programming",
+    "name": "SAS Programming Fundamentals",
+    "issuer": "SAS Institute",
+    "year": "2023",
+    "category": "data",
+    "description": "SAS language fundamentals for data analysis",
+    "fileName": "/certificates/sas-programming.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "duke-data-driven",
+    "name": "Business Model for Data-Driven Competence",
+    "issuer": "Duke University",
+    "year": "2019",
+    "category": "data",
+    "description": "Building business models with data-driven decision making",
+    "fileName": "/certificates/duke-data-driven.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "yale-intro-psychology",
+    "name": "Introduction to Psychology",
+    "issuer": "Yale University",
+    "year": "2019",
+    "category": "soft-skills",
+    "description": "Foundational psychology concepts and human behavior",
+    "fileName": "/certificates/yale-intro-psychology.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "wesleyan-social-psych",
+    "name": "Social Psychology",
+    "issuer": "Wesleyan University",
+    "year": "2020",
+    "category": "soft-skills",
+    "description": "Understanding social behavior and group dynamics",
+    "fileName": "/certificates/wesleyan-social-psych.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "udemy-general",
+    "name": "Udemy Courses",
+    "issuer": "Udemy",
+    "year": "2021",
+    "category": "programming",
+    "description": "Various Udemy courses across multiple topics",
+    "fileName": "/certificates/udemy-general.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "student-peace-ambassador-2022",
+    "name": "Student Peace Ambassador",
+    "issuer": "MIT World Peace University · UNESCO Chair",
+    "year": "2022",
+    "category": "achievement",
+    "description": "Appointed Student Peace Ambassador at the 8th World Parliament of Science, Religion & Philosophy (3–5 April 2022), MIT-WPU Pune. Session theme: A Spirituality Oriented Scientific Laboratory for World Peace. Recognised for contribution to establishing a culture of Peace, Tolerance, and Harmony.",
+    "fileName": "/certificates/student-peace-ambassador-2022.jpg",
+    "fileFormat": "jpg",
+    "featured": true
+  },
+  {
+    "id": "ideain10-runner-up-2021",
+    "name": "IdeaIn10 — Runner-Up",
+    "issuer": "MIT World Peace University · IET Pune LN",
+    "year": "2021",
+    "category": "achievement",
+    "description": "Runner-Up in Round I of the IdeaIn10 Presentation Competition, organised by the School of Computer Engineering and Technology, MIT-WPU Pune, in association with The IET Pune Local Network. 17 December 2021.",
+    "fileName": "/certificates/ideain10-runner-up-2021.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "speak-it-out-sih-fund-2021",
+    "name": "Speak It Out — SIH Innovation Fund Approved",
+    "issuer": "MIT World Peace University · Smart India Hackathon",
+    "year": "2021",
+    "category": "achievement",
+    "description": "Innovation funding of ₹1,00,000 approved for the 'Speak It Out' project through the MIT-WPU Hackathon (Smart India Hackathon). Applied for ₹73,000; approved and disbursed at ₹1,00,000 — recommended for funding by the university. Faculty guide: Dr. Pradnya S. Kulkarni.",
+    "fileName": "/certificates/speak-it-out-fund-approved-2021.png",
+    "fileFormat": "png",
+    "featured": true
+  },
+  {
+    "id": "cdac-fyp-2022",
+    "name": "Final Year Project Certificate — C-DAC Pune",
+    "issuer": "Centre for Development of Advanced Computing (C-DAC) · Strategic Projects Group, Ministry of Electronics & IT, Govt. of India",
+    "year": "2022",
+    "category": "achievement",
+    "description": "Certified completion of Final Year Project 'Domain Identification for Named Entity Disambiguation' at C-DAC Applied AI Group, Panchavati, Pune. Jan 1 – Jun 30, 2022. Signed by Ms. Swati Mehta (Associate Director & Programme Director, SPG), guided by Dr. Krishnanjan Bhattacharjee (Joint Director) and project engineers Mr. Aakash Bakhle and Mr. Abhishek Tomar.",
+    "fileName": "/certificates/cdac-fyp-2022.jpg",
+    "fileFormat": "jpg",
+    "featured": true
+  },
+  {
+    "id": "side-quest-quiz-2020",
+    "name": "Online Quiz — Knowledge of World",
+    "issuer": "Priyadarshini Bhagwati College of Engineering · Students Cell",
+    "year": "2020",
+    "category": "side-quest",
+    "description": "Certificate of Participation for the Online Quiz competition on 'Knowledge of World', organised by the Internal Quality Assurance Cell. Jun 8–10, 2020.",
+    "fileName": "/certificates/side-quest-quiz-2020.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "side-quest-uiux-workshop",
+    "name": "Basic UI/UX Design Workshop",
+    "issuer": "MIT-WPU · Technoborg · DesignBoat UI/UX School",
+    "year": "2021",
+    "category": "side-quest",
+    "description": "Certificate of Participation for completing the workshop on Basic UI/UX Design, organised by MIT-WPU School of Computer Engineering and Technoborg in collaboration with DesignBoat UI/UX School.",
+    "fileName": "/certificates/side-quest-uiux-workshop.png",
+    "fileFormat": "png"
+  },
+  {
+    "id": "side-quest-accelerated-ds-2021",
+    "name": "Online Workshop on Accelerated Data Science",
+    "issuer": "IIT Kharagpur · NVIDIA · National Supercomputing Mission",
+    "year": "2021",
+    "category": "side-quest",
+    "description": "Certificate of Participation for attending the Online Workshop on Accelerated Data Science, conducted by NSM Nodal Centre, IIT Kharagpur and NVIDIA, under the aegis of the National Supercomputing Mission. Feb 20–21, 2021.",
+    "fileName": "/certificates/side-quest-accelerated-ds-2021.png",
+    "fileFormat": "png"
+  }
+]

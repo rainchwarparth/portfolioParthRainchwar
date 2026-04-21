@@ -1,0 +1,10 @@
+{
+  "slug": "e-commerce",
+  "title": "E-commerce Behavioral Analysis",
+  "tagline": "The same 1,438-person IoB survey read as commercial data — platform behavior, Diwali seasonality, and what actually drives people to buy",
+  "summary": "A published IoB paper and extended data analysis from the behavioral psychology research track. The pan-India survey of 1,438 consumers had commercial signals in it from the start: platform-specific purchase triggers, Diwali seasonality, demographic spend patterns, and how session depth on social media correlates with purchase intent.",
+  "themes": ["Consumer Behavior", "E-commerce Analytics", "Internet of Behaviors", "Social Media Influence", "Digital Psychology", "Seasonal Commerce"],
+  "highlight": "1,438 respondents · pan-India",
+  "published": true,
+  "spawnedFrom": { "slug": "behavioral-psychology", "label": "Behavioral Psychology" }
+}

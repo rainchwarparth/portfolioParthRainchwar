@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Machine Learning-Based Psychology: A Study to Understand Cognitive Decision-Making",
+    "publisher": "Springer International Publishing — CCIS (IACC 2021)",
+    "year": "2021",
+    "doi": "10.1007/978-3-030-95502-1_14",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-030-95502-1_14",
+    "authors": ["Parth Rainchwar", "Soham Wattamwar", "Rishikesh Mate", "Chirag Sahasrabudhe", "Varsha Naik"],
+    "surveyWindow": "May 4–10, 2021",
+    "algorithms": ["ML Classification", "Clustering", "Behavioral Mapping"],
+    "summary": "Applied machine learning algorithms to a custom 3-section questionnaire on cognitive decision-making, mapping respondents across youth (15–20), adult (20–24), and millennial (25+) age groups into distinct behavioral clusters.",
+    "findings": "5 behavioral clusters identified. Largest: 41.04% 'merciful-silent' profile (forgiven, peace-seeking). Cluster 3 shows 31.21% prioritizing family — a measurable COVID-era shift in values. Demonstrated ML can classify psychological states with high granularity.",
+    "keyMetrics": [
+      { "label": "Cluster 1 — Merciful Mindset", "value": "41.04%" },
+      { "label": "Cluster 2 — Peace Seekers", "value": "31.79%" },
+      { "label": "Cluster 3 — Family First", "value": "31.21%" }
+    ],
+    "certificate": "/certificates/iacc-2021-presentation.png"
+  },
+  {
+    "title": "Machine Learning for Prediction of Nutritional Psychology, Fast Food Consumption and Its Impact on Students",
+    "publisher": "Springer Nature Singapore — LNEE (ICEI 2022)",
+    "year": "2022",
+    "doi": "10.1007/978-981-99-4634-1_80",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-99-4634-1_80",
+    "authors": ["Parth P. Rainchwar", "Rishikesh S. Mate", "Soham M. Wattamwar", "Dency R. Pambhar", "Varsha Naik"],
+    "surveyWindow": "2018–2020 (Pre-COVID and Post-COVID tracked)",
+    "sampleSize": "150+ MIT-WPU School of Engineering students, age 19–22",
+    "algorithms": ["Random Forest", "Naive Bayes", "Extremely Randomized Trees", "Decision Tree", "Ridge Regression", "Linear Regression"],
+    "summary": "Multi-model ML study analyzing the relationship between fast food consumption, BMI, and sickness in college students. Five prediction targets tested. Pre-COVID vs Post-COVID eating behavior tracked explicitly.",
+    "findings": "Decision Tree on sickness frequency = 98% accuracy. Random Forest on BMI = 96.53%. Post-COVID healthy eating jumped from 50% to 83%+. Hostel students spent avg ₹9,000/month on food; metro hostel students ₹10,500/month.",
+    "keyMetrics": [
+      { "label": "Sickness Prediction (Decision Tree)", "value": "98%" },
+      { "label": "BMI Prediction (Random Forest)", "value": "96.53%" },
+      { "label": "Post-COVID Healthy Eating", "value": "83%+" }
+    ]
+  },
+  {
+    "title": "Analytical Study on Consumer Social and Behavioral Psychology and Its Influence on Online Purchasing",
+    "publisher": "CRC Press — Internet of Behaviors (IoB) Book Chapter",
+    "year": "2023",
+    "doi": "10.1201/9781003388722",
+    "link": "https://doi.org/10.1201/9781003388722",
+    "authors": ["Parth P. Rainchwar", "Rishikesh S. Mate", "Soham M. Wattamwar", "Shilpa Sonawani", "Aditya Gaisamudre"],
+    "surveyWindow": "January 2021 – March 2022",
+    "sampleSize": "1,438 verified responses (from 1,500 collected), pan-India",
+    "algorithms": ["Data Analytics", "Tableau", "Excel", "Statistical Analysis"],
+    "summary": "Final synthesis applying B.F. Skinner's CBT to digital consumer behavior. 30-question survey across India mapping how social media platform usage, time online, and age group influence online purchasing decisions under the Internet of Behaviors framework.",
+    "findings": "Adults (20–40) drove 72.36% of all orders. Instagram led platform influence at 75% average. Prolonged social media use directly drives purchases — >2 hours = 45.08% buy-influenced vs 38.53% for <1 hour. November (Diwali) = 13.64% peak purchase month.",
+    "keyMetrics": [
+      { "label": "Adult Share of Orders", "value": "72.36%" },
+      { "label": "Instagram Influence Avg", "value": "75%" },
+      { "label": ">2hr Social Media → Buy", "value": "45.08%" }
+    ],
+    "crossLink": { "slug": "e-commerce", "label": "E-commerce Behavioral Analysis" }
+  }
+]

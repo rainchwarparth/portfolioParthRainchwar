@@ -1,0 +1,7 @@
+[
+  { "label": "Python (scikit-learn)", "url": "https://scikit-learn.org" },
+  { "label": "Random Forest & Naive Bayes", "url": "https://scikit-learn.org/stable/supervised_learning.html" },
+  { "label": "Tableau", "url": "https://www.tableau.com" },
+  { "label": "Pandas", "url": "https://pandas.pydata.org" },
+  { "label": "R", "url": "https://www.r-project.org" }
+]

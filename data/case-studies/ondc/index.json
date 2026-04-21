@@ -1,0 +1,10 @@
+{
+  "slug": "oncp",
+  "title": "ONCP — Open Network for Content Protocol",
+  "tagline": "A personal framework for open infrastructure in India's telecom stack — starting with what happened to local cable operators after Jio",
+  "summary": "Started from watching my father's cable business get structurally bypassed — not outcompeted. Since Jio, telcos own all five layers: network, content, device, application, and data. LCOs became dumb pipes with no leverage anywhere in the stack. ONCP is a framework for a five-layer open protocol stack — content delivery, shared infra, device neutrality, identity and billing, edge AI — that gives LCOs a role in infrastructure the same way ONDC gave kirana stores a role in e-commerce. Inspired by ONDC and UPI. Not a startup pitch. A problem I keep coming back to.",
+  "themes": ["Digital Public Infrastructure", "Open Protocols", "Local Cable Operators", "Vertical Integration", "Content Sovereignty", "India", "Policy Vision", "Decentralization", "Edge AI"],
+  "highlight": "Personal framework · Policy vision",
+  "published": false,
+  "spawnedFrom": null
+}

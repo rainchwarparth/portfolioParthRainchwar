@@ -1,0 +1,100 @@
+[
+  {
+    "year": "2020",
+    "title": "The Problem — India's Duplicate Vote Challenge",
+    "description": "In Indian elections, manual voter verification struggles to prevent impersonation and duplicate balloting at scale. The question was whether face recognition could replace that manual gate. A biometric check before the ballot is cast would enforce one-person-one-vote without human bottlenecks.",
+    "tags": ["Smart Voting", "Biometrics", "Problem Framing", "Democracy", "Security"]
+  },
+  {
+    "year": "2020–2021",
+    "title": "Surveying the Landscape — 14 Face Recognition Methods",
+    "description": "A systematic review of 14 published studies benchmarked approaches across Haar Classifiers, LBPH, EigenFace, FisherFace, PCA, LDA, and deep learning (CNN, YOLOv3). The goal was to identify which hybrid would be most reliable for single-voter, real-time deployment — not just peak theoretical accuracy.",
+    "tags": ["Literature Survey", "Haar Cascade", "LBPH", "FisherFace", "EigenFace", "CNN"],
+    "dataTable": {
+      "headers": ["Method", "Application", "Notable Result"],
+      "rows": [
+        ["Haar + LBPH + FisherFace", "Visual-assist wearable", "LBPH 93.33% · Fisher 86.67%"],
+        ["PCA + LDA + Neural Network", "Face recognition", "99.5% on YALE dataset"],
+        ["FisherFace", "Face recognition", "100% train · 93% test"],
+        ["PCA Euclidean Distance", "Biometric FR", "98–100% on ORL dataset"],
+        ["Haar + EigenFace (PCA)", "Face recognition", "91.67% multi-face similarity"],
+        ["YOLOv3 + Haar Cascade", "Face mask detection", "90.1%"],
+        ["Haar + Keras Adam", "Gender identification", "Train 96% · Val 90%"],
+        ["CNN + SoftMax classifier", "Face recognition", "~100% train · 90% test"],
+        ["Haar + CNN (MobileNetsV2)", "Drowsiness detection", "~87%"],
+        ["Haar + LBPH", "Smart attendance", "81.6%"],
+        ["Haar + TF-IDF", "Face detection in dim light", "Works well in grey-scale"],
+        ["Haar + Instagram selfie (Haar)", "Social media analysis", "71.48% (high false-pos)"]
+      ]
+    },
+    "barChart": {
+      "caption": "Test accuracy across surveyed face recognition methods",
+      "xKey": "method",
+      "yLabel": "Accuracy (%)",
+      "bars": [
+        { "dataKey": "accuracy", "color": "#6366f1", "label": "Test Accuracy" }
+      ],
+      "data": [
+        { "method": "PCA+LDA+NN",   "accuracy": 99.5 },
+        { "method": "FisherFace",    "accuracy": 93 },
+        { "method": "PCA Euclidean", "accuracy": 98 },
+        { "method": "Haar+LBPH+Fisher", "accuracy": 93.33 },
+        { "method": "CNN+SoftMax",   "accuracy": 90 },
+        { "method": "YOLOv3+Haar",   "accuracy": 90.1 },
+        { "method": "Haar+CNN",      "accuracy": 87 },
+        { "method": "Haar+LBPH",     "accuracy": 81.6 },
+        { "method": "Haar+Instagram","accuracy": 71.48 }
+      ]
+    }
+  },
+  {
+    "year": "2021",
+    "title": "Building the Pipeline — Haar Detection + LBPH Recognition",
+    "description": "The system pipeline flows through four stages: (1) Pre-processing — grayscale conversion and noise reduction to boost algorithm accuracy; (2) Face Detection — Haar Cascade classifier using edge, line, and centre-surround Haar-like features, tuned via scaleFactor (image scale step) and minNeighbors (false-positive suppression); (3) Feature Extraction — Haar-like features drawn from a 24×24 sub-window (~162,000 possible features); (4) Face Recognition — LBPH histogramming the local texture to match against trained voter identities. All implemented in Python with OpenCV.",
+    "tags": ["System Design", "OpenCV", "Python", "Haar Cascade", "LBPH", "Pipeline"],
+    "dataTable": {
+      "headers": ["Pipeline Stage", "Technique", "Purpose"],
+      "rows": [
+        ["Pre-processing", "Grayscale conversion", "Haar-like features require greyscale; reduces noise"],
+        ["Face Detection", "Haar Cascade Classifier", "Detects face region using scaleFactor & minNeighbors params"],
+        ["Feature Extraction", "Haar-like features (24×24 window)", "~162,000 possible edge, line, centre-surround features"],
+        ["Face Recognition", "LBPH Face Recognizer", "Histogram-based texture matching against voter database"],
+        ["Alternative (evaluated)", "EigenFace — PCA-based",  "Reduces face-space dimensions; best for controlled lighting"],
+        ["Alternative (evaluated)", "FisherFace — PCA + LDA", "Separates individuals across classes; handles illumination variation"]
+      ]
+    }
+  },
+  {
+    "year": "October 2021",
+    "title": "Results — What Single vs Multi-Face Testing Revealed",
+    "description": "The hybrid Haar+LBPH model reliably distinguished facial from non-facial images and correctly authenticated individual voters. The critical finding was an edge case: multi-face images degraded recognition confidence, while single-face images produced stable results. For a Smart Voting System — where voters stand one at a time — this boundary condition validates the deployment model. LBPH's 93.33% result in the closest analogous domain (wearable visual-assist device) confirmed it outperformed FisherFace (86.67%) for real-world texture variation.",
+    "tags": ["Results", "Edge Cases", "Validation", "LBPH vs FisherFace"],
+    "dataTable": {
+      "headers": ["Scenario", "Outcome", "Implication"],
+      "rows": [
+        ["Single-face image input", "Reliable recognition ✓", "Validates Smart Voting deployment model"],
+        ["Multi-face image input", "Reduced confidence / unordinary results", "Boundary condition: one voter at a time enforced"],
+        ["Non-facial image input", "Correctly rejected ✓", "System doesn't false-positive on background objects"],
+        ["LBPH vs FisherFace", "93.33% vs 86.67% (wearable-device domain)", "LBPH selected as primary recognizer"]
+      ]
+    }
+  },
+  {
+    "year": "29–30 Oct 2021",
+    "title": "Presented at IEEE Smart GENCON 2021",
+    "description": "The paper was presented at the 2021 International Conference on Smart Generation Computing, Communication and Networking (SMART GENCON), 29–30 October 2021, organised by IEEE Pune Section. The Haar Cascade + LBPH Smart Voting System was accepted as a contribution to the emerging field of biometric security infrastructure for democratic systems.",
+    "tags": ["IEEE", "Published", "Conference", "Smart GENCON", "Pune"],
+    "attachment": {
+      "label": "IEEE Smart GENCON 2021 — Presentation Certificate",
+      "type": "certificate",
+      "href": "https://ieeexplore.ieee.org/abstract/document/9645879"
+    },
+    "figures": [
+      {
+        "src": "/case-studies/haar-cascade/haar-smartgencon-2021-certificate.png",
+        "alt": "IEEE Smart GENCON 2021 Presentation Certificate — Parth Rainchwar",
+        "caption": "Presentation certificate from the 2021 International Conference on Smart Generation Computing, Communication and Networking (SMART GENCON), IEEE Pune Section, 29–30 October 2021. Certifies presentation of 'Optimal Face Recognition using Haar Classifier'."
+      }
+    ]
+  }
+]

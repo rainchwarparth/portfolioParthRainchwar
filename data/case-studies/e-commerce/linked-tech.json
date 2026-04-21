@@ -1,0 +1,7 @@
+[
+  { "label": "Python / Pandas",       "url": "https://pandas.pydata.org" },
+  { "label": "Tableau",               "url": "https://www.tableau.com" },
+  { "label": "Matplotlib",            "url": "https://matplotlib.org" },
+  { "label": "Excel (Power Query)",   "url": "https://microsoft.com/excel" },
+  { "label": "Statistical Analysis",  "url": "https://scipy.org" }
+]

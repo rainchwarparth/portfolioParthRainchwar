@@ -1,0 +1,45 @@
+[
+  {
+    "id": "work",
+    "label": "At Work",
+    "role": "Senior Analyst · Synpulse",
+    "description": "Financial systems consulting for global banks and private wealth clients. Transaction workflows, client platforms, systems in production.",
+    "highlights": [
+      "Systems used across global institutions and private banks",
+      "Wealth management CX work combining tech delivery with service design"
+    ],
+    "url": "https://www.synpulse.com/en/about-us",
+    "color": "emerald",
+    "status": "active",
+    "since": "Dec 2024"
+  },
+  {
+    "id": "learning",
+    "label": "Learning",
+    "role": "BITS Pilani — AI/ML PG Certification",
+    "description": "11-month AI/ML program via BITS Pilani WILP. Deep learning, Gen AI, agentic systems, and ML deployment for working professionals.",
+    "highlights": [
+      "Deep learning architectures, Gen AI and agentic AI",
+      "Scalable ML systems with hands-on applied projects"
+    ],
+    "url": "https://bits-pilani-wilp.ac.in/certification/post-graduate-certification-in-ai-ml.php",
+    "color": "blue",
+    "status": "active",
+    "since": "Oct 2025"
+  },
+  {
+    "id": "fellowship",
+    "label": "Fellowship · YLAC",
+    "role": "Policy in Action Fellow April 26 Cohort",
+    "description": "Month-long program working on live policy projects for MPs, MLAs, and government ministries. Part analysis, part research, part advocacy.",
+    "highlights": [
+      "Live projects for MPs, ministries and governance institutions",
+      "Policy analysis, civic tech, and leadership skilling sessions"
+    ],
+    "url": "https://theylacproject.com/policy-in-action-program/",
+    "color": "violet",
+    "status": "upcoming",
+    "since": "Apr 18, 2026",
+    "until": "May 17, 2026"
+  }
+]

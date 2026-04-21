@@ -1,0 +1,7 @@
+[
+  { "label": "Python",          "url": "https://python.org" },
+  { "label": "OpenCV",          "url": "https://opencv.org" },
+  { "label": "Haar Cascade",    "url": "https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html" },
+  { "label": "LBPH Recognizer", "url": "https://docs.opencv.org/4.x/da/d60/tutorial_face_main.html" },
+  { "label": "NumPy",           "url": "https://numpy.org" }
+]

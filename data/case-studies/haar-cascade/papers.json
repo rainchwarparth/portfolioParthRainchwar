@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Optimal Face Recognition System using Haar Classifier",
+    "publisher": "IEEE Smart GENCON 2021 — International Conference on Smart Generation Computing, Communication and Networking",
+    "year": "2021",
+    "authors": ["Soham Wattamwar", "Rishikesh Mate", "Parth Rainchwar", "Shamla Mantri", "Geeta Sorate"],
+    "summary": "A hybrid face recognition pipeline using Haar Cascade for face detection and LBPH for identity recognition, designed for a Smart Voting System that biometrically authenticates voters before ballot access. The study benchmarks Haar-based approaches against EigenFace, FisherFace, CNN, and PCA-based methods across 14 prior works before implementing and evaluating the Haar+LBPH combination.",
+    "findings": "Haar Cascade + LBPH selected as optimal hybrid for Smart Voting System authentication. Single-face images yield reliable recognition; multi-face inputs degrade confidence — validating one-voter-at-a-time deployment. LBPH (93.33%) outperformed FisherFace (86.67%) in the closest-domain benchmark. scaleFactor and minNeighbors are the critical tuning levers for Haar detection accuracy. The biometric gate enforces the One Person One Vote policy without human bottlenecks.",
+    "algorithms": ["Haar Cascade Classifier", "LBPH Face Recognizer", "EigenFace (PCA)", "FisherFace (PCA + LDA)", "OpenCV"],
+    "keyMetrics": [
+      { "label": "LBPH Accuracy",       "value": "93.33%" },
+      { "label": "FisherFace Accuracy", "value": "86.67%" },
+      { "label": "Papers Reviewed",     "value": "14" },
+      { "label": "Conference",          "value": "IEEE Smart GENCON" }
+    ]
+  }
+]

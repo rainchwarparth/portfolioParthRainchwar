@@ -1,0 +1,79 @@
+{
+  "slug": "trek",
+  "title": "Trek Recommendation System",
+  "tagline": "Trekking Destination Recommender",
+  "summary": "Built as a freelance project in March 2022 — a recommendation system for trekking destinations in India. Put in a trek you know and it returns 10 similar ones, ranked by cosine similarity across description vectors. 208+ treks in the database.",
+  "year": "2022",
+  "status": "complete",
+  "repoUrl": "https://github.com/rainchwarparth/Treck-Recommendation-System-2022",
+  "tags": ["Flask", "Python", "scikit-learn", "NearestNeighbors", "Bootstrap 4", "REST API", "HTML5", "JavaScript"],
+  "sections": [
+    {
+      "type": "overview",
+      "heading": "Background",
+      "body": "You search for a trek you've done and the system returns 10 similar ones based on description content. Built on CountVectorizer + NearestNeighbors with cosine similarity — the core recommendation logic is about 30 lines.\n\nFreelance project from March 2022. Open-sourced in 2024 after the NDA expired. The codebase is refactored and documented if you want to run it locally."
+    },
+    {
+      "type": "how-it-works",
+      "heading": "How the Recommendation Engine Works",
+      "steps": [
+        "Feature Extraction — Trek descriptions are vectorised using CountVectorizer, converting text into numerical feature vectors.",
+        "Similarity Calculation — Cosine similarity is computed between all trek vectors, capturing how similar any two treks are based on description content.",
+        "KNN Search — A NearestNeighbors model (scikit-learn) returns the k most similar treks to the query, using the cosine similarity matrix.",
+        "Ranking — Results are sorted by similarity distance and returned with trek images, descriptions, type labels, and percentage match scores.",
+        "Model Caching — The trained model is serialised to disk (minnn_rf.pkl) and loaded at startup, keeping response times under 1 second."
+      ]
+    },
+    {
+      "type": "snippet",
+      "heading": "Core Algorithm",
+      "language": "python",
+      "code": "from sklearn.neighbors import NearestNeighbors\nfrom sklearn.feature_extraction.text import CountVectorizer\nimport pandas as pd\nimport pickle\n\n# Load trek dataset\ndf = pd.read_csv('b1.csv')\n\n# Vectorise trek descriptions\nvectorizer = CountVectorizer()\nvectors = vectorizer.fit_transform(df['description'])\n\n# Fit NearestNeighbors with cosine similarity\nmodel = NearestNeighbors(metric='cosine', algorithm='brute')\nmodel.fit(vectors)\n\n# Get recommendations for a given trek\ndef recommend(trek_name, n=10):\n    idx = df[df['title'] == trek_name].index[0]\n    distances, indices = model.kneighbors(\n        vectors[idx], n_neighbors=n + 1\n    )\n    results = []\n    for i, dist in zip(indices[0][1:], distances[0][1:]):\n        results.append({\n            'title': df.iloc[i]['title'],\n            'similarity': round((1 - dist) * 100, 2),\n            'image': df.iloc[i]['image'],\n            'type': df.iloc[i]['treck type']\n        })\n    return results"
+    },
+    {
+      "type": "screenshots",
+      "heading": "Screenshots",
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Treck-Recommendation-System-2022/main/screenshots/01-home-page.png",
+          "caption": "Home Page — search interface with autocomplete across 208+ trek names"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/rainchwarparth/Treck-Recommendation-System-2022/main/screenshots/02-search-results.png",
+          "caption": "Results Page — 10 personalised recommendations with similarity scores, trek images, and descriptions"
+        }
+      ]
+    },
+    {
+      "type": "tech-stack",
+      "heading": "Technical Stack",
+      "techStack": ["Python 3.7+", "Flask", "scikit-learn (NearestNeighbors)", "CountVectorizer", "pandas", "numpy", "Bootstrap 4", "HTML5 / CSS3 / JavaScript", "Pickle (model serialisation)", "REST API (JSON)"]
+    },
+    {
+      "type": "capabilities",
+      "heading": "Features",
+      "capabilities": [
+        { "feature": "Smart trek search with autocomplete (208+ destinations)", "status": "live" },
+        { "feature": "10 personalised recommendations per search", "status": "live" },
+        { "feature": "Content-based filtering with cosine similarity", "status": "live" },
+        { "feature": "Similarity percentage score per recommendation", "status": "live" },
+        { "feature": "REST API — GET /api/treks and POST /api/recommend", "status": "live" },
+        { "feature": "Model caching for <1s response times", "status": "live" },
+        { "feature": "Trek images, descriptions, and type labels", "status": "live" },
+        { "feature": "Heroku / Railway / Render deployment support", "status": "live" }
+      ]
+    },
+    {
+      "type": "collaboration",
+      "heading": "Open Source",
+      "body": "The project is fully open source under the MIT License. Contributions welcome — especially around expanding the trek database, improving the recommendation model, or adding new UI features.",
+      "backgrounds": [
+        "Expanding the trek dataset beyond 208 destinations",
+        "Improving the recommendation model (collaborative filtering, hybrid approaches)",
+        "Adding user preference inputs to personalise beyond a single trek query",
+        "Mobile-responsive design improvements"
+      ],
+      "email": "parthrainchwar@gmail.com"
+    }
+  ]
+}

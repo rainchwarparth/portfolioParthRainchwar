@@ -1,0 +1,10 @@
+[
+  { "label": "ONDC (DPI Reference)",          "url": "https://ondc.org" },
+  { "label": "BharatNet / BBNL",              "url": "https://www.bbnl.nic.in" },
+  { "label": "TRAI (Regulatory Landscape)",   "url": "https://www.trai.gov.in" },
+  { "label": "Jio (Ecosystem Study)",         "url": "https://www.jio.com" },
+  { "label": "Airtel (Bundled Stack Model)",  "url": "https://www.airtel.in" },
+  { "label": "Starlink (Satellite Threat)",   "url": "https://www.starlink.com" },
+  { "label": "BSNL",                          "url": "https://bsnl.co.in" },
+  { "label": "Common Service Centres (CSC)",  "url": "https://csc.gov.in" }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Analytical Study on Consumer Social and Behavioral Psychology and Its Influence on Online Purchasing",
+    "publisher": "CRC Press \u2014 Internet of Behaviors (IoB) Book Chapter",
+    "year": "2023",
+    "doi": "10.1201/9781003388722",
+    "link": "https://doi.org/10.1201/9781003388722",
+    "authors": ["Parth P. Rainchwar", "Rishikesh S. Mate", "Soham M. Wattamwar", "Shilpa Sonawani", "Aditya Gaisamudre"],
+    "surveyWindow": "January 2021 \u2013 March 2022",
+    "sampleSize": "1,438 verified responses (from 1,500 collected), pan-India",
+    "algorithms": ["Descriptive Analytics", "Pandas / Python", "Tableau", "Statistical Correlation"],
+    "summary": "Pan-India survey of 1,438 consumers mapping how social media platform usage, time online, and age group influence online purchasing decisions. Applies the Internet of Behaviors (IoB) framework to uncover commercial behavioral signals across three demographic cohorts.",
+    "findings": "Adults (20\u201340) drove 72.36% of all orders. Instagram led platform influence at 75% average. Prolonged social media use directly scales purchase intent \u2014 >2 hours = 45.08% buy-influenced vs 38.53% for <1 hour. November (Diwali) = 13.64% of annual orders.",
+    "keyMetrics": [
+      { "label": "Adult Share of Orders", "value": "72.36%" },
+      { "label": "Instagram Influence Avg", "value": "75%" },
+      { "label": ">2hr Social Media \u2192 Buy", "value": "45.08%" }
+    ],
+    "crossLink": { "slug": "behavioral-psychology", "label": "Behavioral Psychology Research" }
+  }
+]

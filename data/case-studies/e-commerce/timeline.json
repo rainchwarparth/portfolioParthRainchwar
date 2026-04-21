@@ -1,0 +1,114 @@
+[
+  {
+    "year": "January 2021",
+    "title": "Survey Design \u2014 Platform-Behavior Mapping",
+    "description": "The same 30-question consumer behavior survey used for the IoB research paper had enough commercial specificity in it to be read separately. The questions captured not just platform usage but product categories, purchase frequencies, and brand interaction types — which made the dataset useful for e-commerce intelligence, not just behavioral research.",
+    "tags": ["SURVEY DESIGN"],
+    "attachment": { "label": "30-Question Consumer Behavior Survey", "type": "form" },
+    "dataTable": {
+      "caption": "Survey Design Parameters",
+      "headers": ["Dimension", "Detail"],
+      "rows": [
+        ["Questions", "30"],
+        ["Geography", "Pan-India"],
+        ["Duration", "January 2021 \u2013 March 2022 (14 months)"],
+        ["Collection method", "Social media distribution (Instagram, WhatsApp, LinkedIn)"],
+        ["Age groups", "Teen (11\u201319) \u00b7 Adult (20\u201340) \u00b7 Mature (40+)"],
+        ["Key variables", "Platform, screen time, product category, purchase frequency, spend range"]
+      ]
+    }
+  },
+  {
+    "year": "March 2022",
+    "title": "1,438 Responses \u2014 Commercial Signals in Raw Data",
+    "description": "After 14 months, 1,500 responses were collected and 1,438 verified. Initial data cleaning and exploratory analysis revealed immediate commercial signals: November dominated purchases (13.64%), adults aged 20\u201324 peaked at 9.116% of all orderers, and 78.28% of respondents spent over \u20b94,000 per order.",
+    "tags": ["DATA ANALYSIS"],
+    "dataTable": {
+      "caption": "Raw Dataset \u2014 Commercial Summary",
+      "headers": ["Metric", "Value"],
+      "rows": [
+        ["Total collected", "1,500"],
+        ["Verified responses", "1,438"],
+        ["Adult (20\u201340) share of respondents", "65%"],
+        ["Adult share of total orders", "72.36%"],
+        ["Peak order age group", "20\u201324 years (9.116%)"],
+        ["Respondents spending >\u20b94,000/order", "78.28%"],
+        ["Peak purchase month", "November \u2014 13.64% (Diwali effect)"]
+      ]
+    }
+  },
+  {
+    "year": "May 2023",
+    "title": "IoB Paper Published \u2014 Platform Influence Confirmed",
+    "description": "The academic paper confirmed the core thesis: social media time directly scales purchase influence. >2 hour users were 45.08% buy-influenced, vs 38.53% for <1 hour users. Instagram led all platforms at 75% average engagement. The paper gave the dataset academic credibility \u2014 but the commercial intelligence embedded in the raw data was still untapped.",
+    "tags": ["PUBLISHED"],
+    "attachment": {
+      "label": "CRC Press \u2014 IoB Book Chapter",
+      "type": "paper",
+      "href": "https://www.taylorfrancis.com/chapters/edit/10.1201/9781003305170-4/analytical-study-consumer-social-behavioral-psychology-influence-online-purchasing-parth-rainchwar-rishikesh-mate-soham-wattamwar-aditya-gaisamudre-pratyush-jha-shilpa-sonawani"
+    },
+    "barChart": {
+      "caption": "Purchase Influence by Time on Social Media",
+      "xKey": "timeSlot",
+      "yLabel": "% of Respondents",
+      "bars": [
+        { "dataKey": "influenced",    "color": "#f59e0b", "label": "Buy-Influenced (Yes)" },
+        { "dataKey": "maybe",         "color": "#6366f1", "label": "Maybe Influenced" },
+        { "dataKey": "notInfluenced", "color": "#94a3b8", "label": "Not Influenced (No)" }
+      ],
+      "data": [
+        { "timeSlot": "<1 Hour",   "influenced": 38.53, "maybe": 20.87, "notInfluenced": 40.60 },
+        { "timeSlot": "1\u20132 Hrs", "influenced": 40.05, "maybe": 22.15, "notInfluenced": 37.80 },
+        { "timeSlot": ">2 Hours",  "influenced": 45.08, "maybe": 20.72, "notInfluenced": 34.20 }
+      ]
+    }
+  },
+  {
+    "year": "Mid-2023",
+    "title": "E-commerce Lens \u2014 Segmenting by Platform x Demographic",
+    "description": "Extended analysis beyond the paper scope. Segmented the dataset by product category, platform, and demographic to surface commercial patterns. Key insight: Instagram is the dominant discovery platform for adults, but conversion behavior differs by age group. Mature users (40+) show 73.72% Instagram engagement but lower impulse purchase rates than Adults.",
+    "tags": ["EXTENDED ANALYSIS"],
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-1.jpeg",
+        "alt": "Social media platform usage by age group",
+        "caption": "Platform usage segmentation: Instagram leads across all age groups, but the Adult cohort shows the highest LinkedIn overlap (67.24%) \u2014 suggesting a dual-channel discovery behavior relevant to B2B and premium e-commerce. Snapchat and Facebook maintain consistent presence across all cohorts (~50\u201368%)."
+      },
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-6.jpeg",
+        "alt": "Time on social media vs purchase influence",
+        "caption": "Purchase influence gradient by time-on-platform: each additional time bracket increases the buy-influenced rate by ~3\u20134 percentage points. Optimizing for session depth (not just reach) is the core e-commerce takeaway: users who spend >2 hours on social media are 6.55 percentage points more likely to purchase than <1 hour users."
+      }
+    ]
+  },
+  {
+    "year": "Late 2023",
+    "title": "Seasonal & Category Intelligence \u2014 Diwali as a Planning Anchor",
+    "description": "Diwali (November) accounts for 13.64% of annual online orders \u2014 nearly 2\u00d7 the average monthly rate. Home appliances show a strong gender \u00d7 age interaction: adult males exhibit 31.07% direct purchase intent (platform-uninfluenced), while adult females show 30.20% platform-influenced discovery behavior. These patterns directly inform inventory timing, ad-spend calendars, and creative strategy.",
+    "tags": ["COMMERCIAL INSIGHT"],
+    "figures": [
+      {
+        "src": "/case-studies/behavioral-psychology/figures/figure-11.jpeg",
+        "alt": "Home appliance purchases by gender, age group, and social media influence",
+        "caption": "High-value category behavior by demographic: Adult males show the highest uninfluenced direct purchase intent (31.07%) \u2014 indicating brand-loyalty driven decisions not dependent on social discovery. Adult females show the strongest platform-influenced behavior (30.20%). Actionable for targeted ad campaigns: serve discovery ads to female cohort, performance ads to male cohort."
+      }
+    ],
+    "dataTable": {
+      "caption": "Seasonality & Spend Intelligence",
+      "headers": ["Signal", "Value", "Commercial Implication"],
+      "rows": [
+        ["November peak", "13.64% of annual orders", "Double ad-spend budget in Oct\u2013Nov; run Diwali-specific campaigns"],
+        ["Adult spend rate", "72.36% of all orders", "Primary acquisition target: 20\u201340 age bracket"],
+        ["High-spend segment", "78.28% spend >\u20b94,000/order", "Premium product placement is viable; AOV optimization focus"],
+        ["Peak order age", "20\u201324 years (9.116%)", "New-grad cohort: highest intent, best LTV growth opportunity"],
+        [">2hr influence lift", "+6.55pp vs <1hr", "Retargeting after 2+ session exposure maximizes conversion probability"]
+      ]
+    }
+  },
+  {
+    "year": "2024",
+    "title": "Behavioral Framework for E-commerce Strategy",
+    "description": "The behavioral patterns from 1,438 real consumer responses now form an actionable commercial framework: use platform time as the primary segmentation variable for targeting; plan inventory and budgets around the November Diwali anchor; segment creative by gender (discovery vs. direct intent); and prioritize 20\u201324 year olds as the highest-ROI acquisition cohort. Research that began as academic behavioral profiling became a commercial intelligence asset.",
+    "tags": ["FRAMEWORK"]
+  }
+]
