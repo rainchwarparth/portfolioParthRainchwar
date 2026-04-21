@@ -6,8 +6,8 @@ import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 import { navLinks } from "@/lib/navLinks";
 
-// Revalidate every 1 hour in dev, cache aggressively
-export const revalidate = 3600;
+// Static generation: pre-render all project pages at build time
+export const dynamicParams = false;
 
 interface ProjectPageProps {
   params: Promise<{
