@@ -140,16 +140,14 @@ const Navbar = ({ links }: NavbarProps) => {
                   <p className="text-xs font-semibold text-muted-foreground uppercase px-2 py-1">Research</p>
                   <div className="space-y-1">
                     {caseStudies.slice(0, 3).map((cs) => (
-                      <button
+                      <Link
                         key={cs.slug}
-                        onClick={() => {
-                          router.push(`/case/${cs.slug}`);
-                          setExploreOpen(false);
-                        }}
-                        className="w-full text-left px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
+                        href={`/case/${cs.slug}`}
+                        onClick={() => setExploreOpen(false)}
+                        className="block px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
                       >
                         {cs.title}
-                      </button>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -159,16 +157,14 @@ const Navbar = ({ links }: NavbarProps) => {
                   <p className="text-xs font-semibold text-muted-foreground uppercase px-2 py-1">Projects</p>
                   <div className="space-y-1">
                     {builderProjects.slice(0, 3).map((proj) => (
-                      <button
+                      <Link
                         key={proj.slug}
-                        onClick={() => {
-                          router.push(`/project/${proj.slug}`);
-                          setExploreOpen(false);
-                        }}
-                        className="w-full text-left px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
+                        href={`/project/${proj.slug}`}
+                        onClick={() => setExploreOpen(false)}
+                        className="block px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
                       >
                         {proj.title}
-                      </button>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -176,15 +172,13 @@ const Navbar = ({ links }: NavbarProps) => {
                 {/* Quick Links */}
                 <div className="px-3 py-2">
                   <div className="space-y-1">
-                    <button
-                      onClick={() => {
-                        router.push("/sitemap");
-                        setExploreOpen(false);
-                      }}
-                      className="w-full text-left px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors font-medium"
+                    <Link
+                      href="/sitemap"
+                      onClick={() => setExploreOpen(false)}
+                      className="block px-2 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors font-medium"
                     >
                       View All Content
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -237,17 +231,17 @@ const Navbar = ({ links }: NavbarProps) => {
                   <p className="text-xs font-semibold text-muted-foreground uppercase">Research</p>
                   <div className="space-y-1">
                     {caseStudies.slice(0, 3).map((cs) => (
-                      <button
+                      <Link
                         key={cs.slug}
+                        href={`/case/${cs.slug}`}
                         onClick={() => {
-                          router.push(`/case/${cs.slug}`);
                           setMenuOpen(false);
                           setExploreOpen(false);
                         }}
-                        className="block w-full text-left px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
+                        className="block px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
                       >
                         {cs.title}
-                      </button>
+                      </Link>
                     ))}
                   </div>
                   
@@ -255,31 +249,31 @@ const Navbar = ({ links }: NavbarProps) => {
                   <p className="text-xs font-semibold text-muted-foreground uppercase mt-3">Projects</p>
                   <div className="space-y-1">
                     {builderProjects.slice(0, 3).map((proj) => (
-                      <button
+                      <Link
                         key={proj.slug}
+                        href={`/project/${proj.slug}`}
                         onClick={() => {
-                          router.push(`/project/${proj.slug}`);
                           setMenuOpen(false);
                           setExploreOpen(false);
                         }}
-                        className="block w-full text-left px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
+                        className="block px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors"
                       >
                         {proj.title}
-                      </button>
+                      </Link>
                     ))}
                   </div>
                   
                   {/* Quick Links */}
-                  <button
+                  <Link
+                    href="/sitemap"
                     onClick={() => {
-                      router.push("/sitemap");
                       setMenuOpen(false);
                       setExploreOpen(false);
                     }}
-                    className="block w-full text-left px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors font-medium mt-3"
+                    className="block px-2 py-2 text-xs text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded transition-colors font-medium mt-3"
                   >
                     View All Content
-                  </button>
+                  </Link>
                 </div>
               )}
             </li>
