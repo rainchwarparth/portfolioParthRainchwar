@@ -6,6 +6,9 @@ import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 import { navLinks } from "@/lib/navLinks";
 
+// Revalidate every 1 hour in dev, cache aggressively
+export const revalidate = 3600;
+
 interface CaseStudyPageProps {
   params: Promise<{
     slug: string;
